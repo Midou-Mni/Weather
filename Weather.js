@@ -68,7 +68,7 @@ function cityDetails(dataCity){
 
     changedEl.innerHTML += 
         `
-            <img class="state" src="${weatherIcon.src}" title="${weatherIcon.title}}">
+            <img class="state" src="${weatherIcon.src}" title="${weatherIcon.title}">
             <h1 class="temp">${Math.round(dataCity.main.temp)}°c</h1>
             <h2 class="city">${dataCity.name}</h2>
 
