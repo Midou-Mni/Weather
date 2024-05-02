@@ -40,27 +40,27 @@ function cityDetails(dataCity){
     //The Weather Icon
     if(dataCity.weather[0].main == "Clouds"){
         weatherIcon.src = "images/clouds.png";
-        weatherIcon.alt = dataCity.weather[0].description;
+        weatherIcon.title = dataCity.weather[0].description;
     }
     else if(dataCity.weather[0].main == "Drizzle"){
         weatherIcon.src = "images/drizzle.png";
-        weatherIcon.alt = dataCity.weather[0].description;
+        weatherIcon.title = dataCity.weather[0].description;
     }
     else if(dataCity.weather[0].main == "Mist"){
         weatherIcon.src = "images/mist.png";
-        weatherIcon.alt = dataCity.weather[0].description;
+        weatherIcon.title = dataCity.weather[0].description;
     }
     else if(dataCity.weather[0].main == "Rain"){
         weatherIcon.src = "images/rain.png";
-        weatherIcon.alt = dataCity.weather[0].description;
+        weatherIcon.title = dataCity.weather[0].description;
     }
     else if(dataCity.weather[0].main == "Snow"){
         weatherIcon.src = "images/snow.png";
-        weatherIcon.alt = dataCity.weather[0].description;
+        weatherIcon.title = dataCity.weather[0].description;
     }
     else{
         weatherIcon.src = "images/clear.png";
-        weatherIcon.alt = dataCity.weather[0].description;
+        weatherIcon.title = dataCity.weather[0].description;
     };
     
 
@@ -68,7 +68,7 @@ function cityDetails(dataCity){
 
     changedEl.innerHTML += 
         `
-            <img class="state" src="${weatherIcon.src}" alt="${weatherIcon.alt}}">
+            <img class="state" src="${weatherIcon.src}" title="${weatherIcon.alt}}">
             <h1 class="temp">${Math.round(dataCity.main.temp)}°c</h1>
             <h2 class="city">${dataCity.name}</h2>
 
