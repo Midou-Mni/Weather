@@ -1,28 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="weather.css">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Weather App</title>
+  <link rel="stylesheet" href="weather.css" />
 </head>
 <body>
-
-    <div class="card">
-
-        <section class="inpt">
-            <input type="text" id="inpt" placeholder="City...">
-            <button class="btn">
-                <img class="btnImg" src="images/bx-search-alt-2.svg">
-            </button>
-        </section>
-
-        <section class="changed"> 
-        </section>
-
-    </div>
-
-    <script src="Weather.js"></script>
+  <div class="card">
+    <section class="search">
+      <input type="text" id="inpt" placeholder="Enter city name..." />
+      <button class="btn" aria-label="Search">
+        <img class="btnImg" src="images/bx-search-alt-2.svg" alt="Search" />
+      </button>
+    </section>
+    <section class="changed"></section>
+  </div>
+  <script src="weather.js"></script>
 </body>
 </html>
-<img src="" alt="">
